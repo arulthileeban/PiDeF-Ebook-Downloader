@@ -150,12 +150,12 @@ class Layout(Frame):
         inputTextBox.setPads(10, 10)
         inputTextBox.bind('<FocusIn>', inputTextBox.on_entry_click) #Delete the default text once the user clicks the box for the first time
 
-        v=IntVar() #Variable which stores the option selected by the radiobutton
+        i=IntVar() #Variable which stores the option selected by the radiobutton
 
         #Radio buttons to limit the search results
-        OptionRadioButton1=RadioButtons(frame, '10 per', side=TOP, anchor=NW, pady=0, padx=5, variable=v, value=1)
-        OptionRadioButton2=RadioButtons(frame, '20 per', side=TOP, anchor=NW, pady=0, padx=5, variable=v, value=2)
-        OptionRadioButton3=RadioButtons(frame, '30 per', side=TOP, anchor=NW, pady=0, padx=5, variable=v, value=3)
+        OptionRadioButton1=RadioButtons(frame, '10 per', side=TOP, anchor=NW, pady=0, padx=5, variable=i, value=1)
+        OptionRadioButton2=RadioButtons(frame, '20 per', side=TOP, anchor=NW, pady=0, padx=5, variable=i, value=2)
+        OptionRadioButton3=RadioButtons(frame, '30 per', side=TOP, anchor=NW, pady=0, padx=5, variable=i, value=3)
 
         #List box in which the search results are to be displayed
 
