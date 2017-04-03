@@ -7,8 +7,8 @@ def scrap(search_term,num_requests):
     output_dir = ''
     output_fname='output'
     output_ext='.json'
-    search_engine_id = '002418565633053671293:rwtbuojhuju'
-    api_key = ' AIzaSyAfxMcI8jYYQr7ISMcnNwExD05Q7yqpAUo '
+    search_engine_id = 'Input ID Here'
+    api_key = 'Input secret key here'
     service = build('customsearch', 'v1', developerKey=api_key)
     collection = service.cse()
 
